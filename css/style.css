@@ -68,9 +68,9 @@ div {
 
 header nav {
     display: flex;
-    background-image: url('../images/header.webp');
+    /* background-image: url('../images/header.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -86,22 +86,44 @@ header nav img {
     border: none;
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none; 
-    padding: 0;
-    align-items: center; 
-}
-
-header nav ul li {
-    margin-right: 20px; 
-}
-
-header nav ul li:last-child {
-    margin-right: 5px; 
-}
-
-header nav ul button {
-    background-color: none;
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
     border: none;
+}
+
+.dropbtn img {
+    max-height: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
