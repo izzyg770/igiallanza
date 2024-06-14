@@ -105,3 +105,43 @@ header nav ul button {
     background-color: none;
     border: none;
 }
+
+#main, #recipes-main {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+
+.current-page {
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999999px;
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.skip-link:focus {
+    left: auto;
+}
